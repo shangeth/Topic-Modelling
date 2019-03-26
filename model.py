@@ -1,4 +1,12 @@
-
+import pandas as pd
+import unicodedata
+from sklearn.feature_extraction.text import CountVectorizer
+import numpy as np
+from nltk.stem import WordNetLemmatizer
+import nltk
+nltk.download('wordnet')
+import re
+from sklearn.decomposition import LatentDirichletAllocation
 
 
 
@@ -30,6 +38,7 @@ def print_top_words(model, feature_names, n_top_words):
         
       
 def run_topic_modelling(X):
+	print('\n Running Topic Model...')
 	text = list(nyTimesTemp)
 	tf_vectorizer = LemmaCountVectorizer(max_df=0.9, 
 	                                   min_df=0.1,

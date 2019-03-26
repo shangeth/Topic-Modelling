@@ -10,7 +10,8 @@ from sklearn.decomposition import LatentDirichletAllocation
 
 
 def process_data(path):
-	nyTimesFile = open('/content/nytimes_news_articles.txt', encoding='latin-1')
+	print('Processing Data...')
+	nyTimesFile = open(path, encoding='latin-1')
 	nyTimesFile.seek(0)
 	nyTimesV1 = nyTimesFile.readlines()
 	nyTimesTemp = []
