@@ -22,10 +22,10 @@ def get_articles_for_date(date_indexes, nyTimesTemp):
 
 
 class LemmaCountVectorizer(CountVectorizer):
-	lemm = WordNetLemmatizer()
-    def build_analyzer(self):
-        analyzer = super(LemmaCountVectorizer, self).build_analyzer()
-        return lambda doc: (lemm.lemmatize(w) for w in analyzer(doc))
+	def build_analyzer(self):
+		lemm = WordNetLemmatizer()
+		analyzer = super(LemmaCountVectorizer, self).build_analyzer()
+		return lambda doc: (lemm.lemmatize(w) for w in analyzer(doc))
 
 def print_top_words(model, feature_names, n_top_words):
     for index, topic in enumerate(model.components_):
@@ -39,7 +39,7 @@ def print_top_words(model, feature_names, n_top_words):
       
 def run_topic_modelling(X):
 	print('\n Running Topic Model...')
-	text = list(nyTimesTemp)
+	text = list(X)
 	tf_vectorizer = LemmaCountVectorizer(max_df=0.9, 
 	                                   min_df=0.1,
 	                                   stop_words='english',
