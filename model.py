@@ -29,29 +29,28 @@ class LemmaCountVectorizer(CountVectorizer):
 
 def print_top_words(model, feature_names, n_top_words):
     for index, topic in enumerate(model.components_):
-        message = "\nTopic {}:".format(index)
+        message = "Words making the topics in article : "
         message += " ".join([feature_names[i] for i in topic.argsort()[:-n_top_words - 1 :-1]])
         print(message)
-        print("="*70)
+        # print("="*70)
         
         
         
       
-def run_topic_modelling(X):
-	print('\n Running Topic Model...')
-	text = list(X)
-	tf_vectorizer = LemmaCountVectorizer(max_df=0.9, 
-	                                   min_df=0.1,
+def run_topic_modelling(X, i):
+	print('\n\nRunning Topic Model on article {}'.format(i+1))
+	text = [X]
+	# print(text)
+	tf_vectorizer = LemmaCountVectorizer(max_df=1, 
+	                                   min_df=0,
 	                                   stop_words='english',
 	                                   decode_error='ignore')
 	tf = tf_vectorizer.fit_transform(text)
-	lda = LatentDirichletAllocation(n_components=10, max_iter=20,
+	lda = LatentDirichletAllocation(n_components=1, max_iter=20,
 	                            learning_method = 'batch',
 	                            learning_offset = 50.,
 	                            random_state = 0)
-
 	lda.fit(tf)
 	n_top_words = 10
-	print("\nTopics in LDA model: ")
 	tf_feature_names = tf_vectorizer.get_feature_names()
 	print_top_words(lda, tf_feature_names, n_top_words)

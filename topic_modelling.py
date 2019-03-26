@@ -8,7 +8,9 @@ def main(date):
 	nyTimesTemp, dates = process_data('./data/nytimes_news_articles.txt')
 	date_indexes = get_index_dates(date, dates)
 	articles = get_articles_for_date(date_indexes, nyTimesTemp)
-	run_topic_modelling(articles)
+	articles = [process_text(i) for i in articles]
+	for i in range(len(articles)):
+		run_topic_modelling(articles[i], i)
 
 
 if __name__ == '__main__':
