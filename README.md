@@ -12,34 +12,34 @@ Processing Data...
 
 Topics in LDA model: 
 
-Topic 0:said year apartment percent student new course college house 000
+Topic 0:mr said trump republican state clinton party democrat vote political
 ======================================================================
 
-Topic 1:like itas time just thing people way music think life
+Topic 1:mr million new company year itas like said athe way
 ======================================================================
 
-Topic 2:year game million company team executive season chief pay final
+Topic 2:said house service father m mr people year like new
 ======================================================================
 
-Topic 3:room art like 000 new museum free foot york space
+Topic 3:said player school year team like york new coach ai
 ======================================================================
 
-Topic 4:island child said state going say donat park plan new
+Topic 4:care said tax organization government veteran service hospital mr american
 ======================================================================
 
-Topic 5:said mr m ai year video month time going got
+Topic 5:said game time sunday year hit run base home just
 ======================================================================
 
-Topic 6:said state year woman people told day police government american
+Topic 6:said year mr people military state united country right government
 ======================================================================
 
-Topic 7:new york law university graduated mother father received son couple
+Topic 7:game second race win said won time final season team
 ======================================================================
 
-Topic 8:player time great round open year line said book french
+Topic 8:said officer safety number problem official 000 car police town
 ======================================================================
 
-Topic 9:mr said new m film work american athe year york
+Topic 9:said veteran mr making work 000 decision guy ai life
 ======================================================================
 
 ```
