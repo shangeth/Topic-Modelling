@@ -1,4 +1,5 @@
-# Topic-Modelling
+# Topic-Modelling with Latent Dirichlet Allocation
+![](https://www.oreilly.com/library/view/scala-machine-learning/9781788479042/assets/87d01601-71f3-4c34-9fbc-cf468d483985.png)
 
 Run Topic modelling for all articles on a date from NYTimes.
 ```
