@@ -5,41 +5,42 @@ Run Topic modelling for all articles on a date from NYTimes.
 ```
 python topic_modelling.py --date='2016/05/29'
  ```
-```
 Processing Data...
 
- Running Topic Model...
 
-Topics in LDA model: 
+Running Topic Model on article 1
+Words making the topics in article : guardiola mourinho club champion league manchester coach player united city
 
-Topic 0:mr said trump republican state clinton party democrat vote political
-======================================================================
 
-Topic 1:mr million new company year itas like said athe way
-======================================================================
+Running Topic Model on article 2
+Words making the topics in article : macpherson sweater word demand letter instagram inn husband hruska hotelier
 
-Topic 2:said house service father m mr people year like new
-======================================================================
 
-Topic 3:said player school year team like york new coach ai
-======================================================================
+Running Topic Model on article 3
+Words making the topics in article : sex amnesty model police prostitution worker nordic people trafficking norway
 
-Topic 4:care said tax organization government veteran service hospital mr american
-======================================================================
 
-Topic 5:said game time sunday year hit run base home just
-======================================================================
+Running Topic Model on article 4
+Words making the topics in article : briefing new security trump said mr good brain want
 
-Topic 6:said year mr people military state united country right government
-======================================================================
 
-Topic 7:game second race win said won time final season team
-======================================================================
+Running Topic Model on article 5
+Words making the topics in article : couric katie lehr twitter hear leslie story m episode follow
 
-Topic 8:said officer safety number problem official 000 car police town
-======================================================================
 
-Topic 9:said veteran mr making work 000 decision guy ai life
-======================================================================
+Running Topic Model on article 6
+Words making the topics in article : koh bee say gallery art new time chapel human earth
+
+
+Running Topic Model on article 7
+Words making the topics in article : jury album studio year ai song singer berklee say new
+
+
+Running Topic Model on article 8
+Words making the topics in article : year brazil people country time brazilian state collor mr father
+
+...
+...
+...
 
 ```
