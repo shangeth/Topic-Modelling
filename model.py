@@ -37,8 +37,7 @@ def print_top_words(model, feature_names, n_top_words):
         
         
       
-def run_topic_modelling(X, i):
-	print('\n\nRunning Topic Model on article {}'.format(i+1))
+def run_topic_modelling(X):
 	text = [X]
 	# print(text)
 	tf_vectorizer = LemmaCountVectorizer(max_df=1, 
