@@ -8,6 +8,13 @@ cd Topic-Modelling
 ```
 Needed Python Libraries
 ```
+NLTK
+Sklearn
+unicodedata
+Numpy
+Pandas
+re
+
 
 ```
 
