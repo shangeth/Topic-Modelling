@@ -1,6 +1,14 @@
 # Topic-Modelling with Latent Dirichlet Allocation
 ![](https://www.oreilly.com/library/view/scala-machine-learning/9781788479042/assets/87d01601-71f3-4c34-9fbc-cf468d483985.png)
 
+Set up the repository
+```
+git clone https://github.com/shangeth/Topic-Modelling.git
+cd Topic-Modelling
+```
+
+
+
 Run Topic modelling for all articles on a date from NYTimes.
 ```
 python topic_modelling.py --date='2016/05/29'
