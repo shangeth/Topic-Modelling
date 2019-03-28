@@ -6,7 +6,10 @@ Set up the repository
 git clone https://github.com/shangeth/Topic-Modelling.git
 cd Topic-Modelling
 ```
+Needed Python Libraries
+```
 
+```
 
 
 Run Topic modelling for all articles on a date from NYTimes.
