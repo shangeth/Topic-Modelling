@@ -14,7 +14,10 @@ unicodedata
 Numpy
 Pandas
 re
-
+requests
+json
+newsplease
+nytimesarticle
 
 ```
 
